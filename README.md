@@ -38,13 +38,13 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
-|adress|string|null: false|
+|name|string|null: false, index: true|
+|mailadress|string|null: false|
 |password|string|null: false|
 
 ### Association
 - has_many :messages
-- has_many :groups
+- has_many :groups, through: :groups_groups
 
 
 
@@ -56,7 +56,7 @@ Things you may want to cover:
 
 ### Association
 - has_many :messages
-- has_many :users
+- has_many :users, through: :users_groups
 
 
 ## messageテーブル
