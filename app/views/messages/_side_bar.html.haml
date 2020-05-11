@@ -1,0 +1,24 @@
+.Sidebar
+  .Sidebar__userlist
+    .Sidebar__userlist__topitem
+      %p.Sidebar__userlist__topitem__name
+        kanta
+      %ul.Sidebar__userlist__topitem__icon
+        %li.Sidebar__userlist__topitem__new-group
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.Sidebar__userlist__topitem__edit-user
+          = link_to "#" do
+            = icon('fas', 'cog')
+
+  .Sidebar__grouplist
+    .Sidebar__grouplist__group
+      %p.Sidebar__grouplist__group__name
+        techcamp
+      %p.Sidebar__grouplist__group__message
+        まだメッセージはありません
+    .Sidebar__grouplist__group
+      %p.Sidebar__grouplist__group__name
+        techcamp
+      %p.Sidebar__grouplist__group__message
+        まだメッセージはありません
