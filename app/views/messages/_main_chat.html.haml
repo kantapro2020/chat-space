@@ -1,0 +1,38 @@
+.Chatmain
+  .Chatmain__groupinfo
+    .Chatmain__groupinfo__leftbox
+      %h2.Chatmain__groupinfo__leftbox__group
+      teamkanta
+      %ul.Chatmain__groupinfo__leftbox__menbarlist
+        %li.Chatmain__groupinfo__leftbox__member
+        Member：
+        %li.Chatmain__groupinfo__leftbox__name
+        kanta
+    .Chatmain__groupinfo__edit
+      = link_to "#" do
+        Edit
+  .Chatmain__messagelist
+    .Chatmain__messagelist__message
+      .Chatmain__messagelist__message__namedate
+        %p.Chatmain__messagelist__message__namedate__name
+          kanta
+        %p.Chatmain__messagelist__message__namedate__date
+          date
+      .Chatmain__messagelist__message__text
+        Hello!
+    .Chatmain__messagelist__message
+      .Chatmain__messagelist__message__namedate
+        %p.Chatmain__messagelist__message__namedate__name
+          kanta
+        %p.Chatmain__messagelist__message__namedate__date
+          date
+      .Chatmain__messagelist__message__text
+        Hello!!
+  .Chatmain__messageform
+    .Chatmain__messageform__new
+      .input-box
+        %input{type: "text", class: "input-box__text",placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          =icon('fas', 'image')
+          %input{type: "file",class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
