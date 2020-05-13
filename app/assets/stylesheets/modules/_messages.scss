@@ -39,17 +39,17 @@
   &__grouplist{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
-    &__group{
-      color: white;
+    .group{
       padding: 20px 20px 40px;
       &__name{
         font-size: 15px;
-        font-weight: bold;;
+        font-weight: bold;
+        color: white;
       }
       &__message{
         font-size: 11px;
-        font-weight: bold;
         margin-top: 5px;
+        color: white;
       }
     }
   }
@@ -119,7 +119,6 @@
     background-color: #d2d2d2;
     padding:20px 40px;
     &__new{
-      display: flex;
       .input-box {
         width: 100%;
         display: flex;
@@ -133,7 +132,7 @@
         }
         &__image{
           top: 10px;
-          right: 10px;
+          right: 135px;
           cursor: pointer;
           position: absolute;
           &__file{
@@ -152,4 +151,7 @@
       }
     }
   }
+}
+.inupt-box__text{
+  width: 100%;
 }
