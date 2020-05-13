@@ -12,21 +12,21 @@
             = icon('fas', 'cog', class: 'icon')
 
   .Sidebar__grouplist
-  -#   .Sidebar__grouplist__group
-  -#     %p.Sidebar__grouplist__group__name
-  -#       techcamp
-  -#     %p.Sidebar__grouplist__group__message
-  -#       まだメッセージはありません
-  -#   .Sidebar__grouplist__group
-  -#     %p.Sidebar__grouplist__group__name
-  -#       techcamp
-  -#     %p.Sidebar__grouplist__group__message
-  -#       まだメッセージはありません
+    -# .Sidebar__grouplist__group
+    -#   %p.Sidebar__grouplist__group__name
+    -#     techcamp
+    -#   %p.Sidebar__grouplist__group__message
+    -#     まだメッセージはありません
+    -# .Sidebar__grouplist__group
+    -#   %p.Sidebar__grouplist__group__name
+    -#     techcamp
+    -#   %p.Sidebar__grouplist__group__message
+    -#     まだメッセージはありません
 
     - current_user.groups.each do |group|
       .group
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .group__name
             = group.name
           .group__message
-            メッセージはまだありません。
+            = group.show_last_message
