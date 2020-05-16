@@ -55,7 +55,6 @@ $(function(){
       var html = buildHTML(data);
       $('.Chatmain__messagelist').append(html);
       $('.Chatmain__messagelist').animate({ scrollTop: $('.Chatmain__messagelist')[0].scrollHeight});
-      // $('.Chatmain__messagelist').animate({'height' : '200px'});
       $('form')[0].reset();
       $(".submit-btn").prop("disabled", false);
     })
