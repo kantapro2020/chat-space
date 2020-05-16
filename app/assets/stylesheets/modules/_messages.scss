@@ -39,6 +39,7 @@
   &__grouplist{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
+    overflow: auto;
     .group{
       padding: 20px 20px 40px;
       &__name{
@@ -92,6 +93,7 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 40px 35px;
+    overflow: auto;
     &__message{
       padding-bottom: 40px;
       &__namedate{
